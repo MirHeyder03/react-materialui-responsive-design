@@ -17,14 +17,15 @@ import {
   ListItemText,
   Switch,
 } from "@mui/material";
-const Sidebar = ({mode,setMode  }) => {
-    return(
-      <Box flex={1} p={2} sx={{display:{xs:"none",sm:"block"}}}>
+const Sidebar = ({ mode, setMode }) => {
+  return (
+    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+      <Box position="fixed">
         <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
               <ListItemIcon>
-                <Home/>
+                <Home />
               </ListItemIcon>
               <ListItemText primary="Homepage" />
             </ListItemButton>
@@ -82,12 +83,14 @@ const Sidebar = ({mode,setMode  }) => {
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
-              <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
+              <Switch
+                onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+              />
             </ListItemButton>
           </ListItem>
-          </List>
+        </List>
       </Box>
-    )
-  };
-  export default Sidebar;
-  
+    </Box>
+  );
+};
+export default Sidebar;
