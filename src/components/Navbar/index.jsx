@@ -12,12 +12,10 @@ import {
   MenuItem,
   Toolbar,
 } from "@mui/material";
-
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
 });
-
 const Search = styled("div")(({ theme }) => ({
   backgroundColor: "white",
   padding: "0 10px",
@@ -40,7 +38,6 @@ const UserBox = styled(Box)(({ theme }) => ({
     display: "none",
   },
 }));
-
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (

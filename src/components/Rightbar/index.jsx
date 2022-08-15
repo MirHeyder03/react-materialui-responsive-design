@@ -6,7 +6,6 @@ import {
   ImageListItem,
   Typography,
 } from "@mui/material";
-
 const Rightbar = () => {
   return (
     <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
@@ -49,9 +48,6 @@ const Rightbar = () => {
             src="https://material-ui.com/static/images/avatar/8.jpg"
           />
         </AvatarGroup>
-        <Typography variamt="h6" fontWeight="100">
-          Latest Photos
-        </Typography>
       </Box>
     </Box>
   );
